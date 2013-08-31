@@ -37,6 +37,8 @@ gem 'devise'
 #added to prevent “only generation of JSON objects or arrays allowed” error
 gem 'therubyracer'
 
+gem 'friendly_id', '5.0.0.beta4'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
