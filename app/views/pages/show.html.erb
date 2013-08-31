@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @page.category_id %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @page.language %>
+</p>
+
+<p>
+  <strong>Is help page:</strong>
+  <%= @page.is_help_page %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @page.title %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @page.summary %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @page.body %>
+</p>
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
