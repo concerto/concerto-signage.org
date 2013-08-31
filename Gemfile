@@ -32,6 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'devise'
+
+#added to prevent “only generation of JSON objects or arrays allowed” error
+gem 'therubyracer'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
