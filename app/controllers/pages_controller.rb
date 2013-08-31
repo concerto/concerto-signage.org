@@ -1,6 +1,4 @@
 class PagesController < ApplicationController
-  before_action :set_page, only: [:show, :edit, :update, :destroy]
-
   # GET /pages
   # GET /pages.json
   def index
@@ -10,6 +8,7 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
+    @page = Page.friendly.find(params[:id])
   end
 
   # GET /pages/new
@@ -19,6 +18,7 @@ class PagesController < ApplicationController
 
   # GET /pages/1/edit
   def edit
+    @page = Page.find(params[:id])
   end
 
   # POST /pages
@@ -40,6 +40,7 @@ class PagesController < ApplicationController
   # PATCH/PUT /pages/1
   # PATCH/PUT /pages/1.json
   def update
+    @page = Page.friendly.find(params[:id])
     respond_to do |format|
       if @page.update(page_params)
         format.html { redirect_to @page, notice: 'Page was successfully updated.' }
@@ -54,6 +55,7 @@ class PagesController < ApplicationController
   # DELETE /pages/1
   # DELETE /pages/1.json
   def destroy
+    @page = Page.friendly.find(params[:id])
     @page.destroy
     respond_to do |format|
       format.html { redirect_to pages_url }

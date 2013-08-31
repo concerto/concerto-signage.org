@@ -32,5 +32,4 @@ gem 'therubyracer'
 gem 'friendly_id', '5.0.0.beta4'
 
 gem 'sunspot_rails'
-gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
-
+gem 'sunspot_solr'
