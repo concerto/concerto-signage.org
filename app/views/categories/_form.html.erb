@@ -16,17 +16,17 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :language %><br>
-    <%= f.text_field :language %>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
     <%= f.label :is_help_category %><br>
     <%= f.check_box :is_help_category %>
-  </div>
+  </div>  
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
+    <%= f.label :language %><br>
+    <%= f.select :language, options_for_select(I18n.available_locales, I18n.locale.to_sym) %>
+  </div>  
   <div class="actions">
     <%= f.submit %>
   </div>
