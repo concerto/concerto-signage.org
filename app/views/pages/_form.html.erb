@@ -1,4 +1,4 @@
-<%= form_for(@page) do |f| %>
+<%= form_for(@page, html: { class: "pure-form pure-form-stacked" } ) do |f| %>
   <% if @page.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@page.errors.count, "error") %> prohibited this page from being saved:</h2>
@@ -13,19 +13,19 @@
 
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :summary %><br>
+    <%= f.label :summary %>
     <%= f.text_area :summary %>
   </div>
   <div class="field">
-    <%= f.label :body %><br>
+    <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
   <div class="field">
-    <%= f.label :category_id %><br>
+    <%= f.label :category_id %>
     <%= f.select :category_id, Category.all.collect {|c| [ c.name, c.id ] }  %>
   </div>
     <%= f.label :language %>
@@ -33,8 +33,9 @@
       <%= f.select :language, options_for_select(I18n.available_locales, I18n.locale.to_sym) %>
     </div>
   <div class="field">
-    <%= f.label :help_page %><br>
-    <%= f.check_box :is_help_page %>
+    <label class="pure-checkbox">
+      <%= f.check_box :is_help_page %> Help page
+    </label>
   </div>  
   
   <div class="actions">
