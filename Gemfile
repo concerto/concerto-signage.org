@@ -1,4 +1,5 @@
-ruby '2.0.0'
+# Commenting out for now. We can uncomment when we go to production status
+# ruby '2.0.0'
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -30,6 +31,7 @@ gem 'turbolinks'
 gem 'spring',        group: :development
 
 gem 'devise'
+gem 'omniauth-google-oauth2'
 
 gem "friendly_id", "~> 5.0.3"
 
