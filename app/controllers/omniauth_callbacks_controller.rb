@@ -1,4 +1,5 @@
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
+
   def google_oauth2
     user = User.from_omniauth(request.env["omniauth.auth"])
     if !user
@@ -13,8 +14,5 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
       redirect_to :controller => :pages, :action => :show, :id => :frontpage
     end
   end
-
-  def google_oauth2_destroy
-  end
+  
 end
-
