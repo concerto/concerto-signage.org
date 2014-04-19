@@ -49,5 +49,8 @@ gem 'unicorn', group: :production
 # Use debugger
 gem 'debugger', group: [:development, :test]
 
+# ElasticSearch based searching.
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 
 gem 'rails_12factor', group: :production
