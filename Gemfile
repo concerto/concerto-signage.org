@@ -35,9 +35,6 @@ gem 'omniauth-google-oauth2'
 
 gem "friendly_id", "~> 5.0.3"
 
-gem 'sunspot_rails'
-gem 'sunspot_solr' #local solr instance for development use
-
 gem 'carrierwave'
 
 # Use ActiveModel has_secure_password
