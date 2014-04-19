@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140417032410) do
+ActiveRecord::Schema.define(version: 20140419224003) do
 
   create_table "categories", force: true do |t|
     t.string  "name"
@@ -39,7 +39,6 @@ ActiveRecord::Schema.define(version: 20140417032410) do
   create_table "pages", force: true do |t|
     t.integer  "category_id"
     t.string   "language"
-    t.boolean  "is_help_page"
     t.string   "title"
     t.text     "summary"
     t.text     "body"
@@ -47,6 +46,7 @@ ActiveRecord::Schema.define(version: 20140417032410) do
     t.datetime "updated_at"
     t.string   "slug"
     t.string   "header_image"
+    t.boolean  "is_active"
   end
 
   add_index "pages", ["slug"], name: "index_pages_on_slug", unique: true
