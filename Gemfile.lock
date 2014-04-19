@@ -55,17 +55,12 @@ GEM
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    elasticsearch (1.0.1)
-      elasticsearch-api (= 1.0.1)
-      elasticsearch-transport (= 1.0.1)
-    elasticsearch-api (1.0.1)
+    elasticsearch (0.4.11)
+      elasticsearch-api (= 0.4.11)
+      elasticsearch-transport (= 0.4.11)
+    elasticsearch-api (0.4.11)
       multi_json
-    elasticsearch-model (0.1.1)
-      activesupport (> 3)
-      elasticsearch (> 0.4)
-      hashie
-    elasticsearch-rails (0.1.1)
-    elasticsearch-transport (1.0.1)
+    elasticsearch-transport (0.4.11)
       faraday
       multi_json
     erubis (2.7.0)
@@ -142,6 +137,10 @@ GEM
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
+    searchkick (0.6.3)
+      activemodel
+      elasticsearch (~> 0.4.11)
+      hashie
     spring (1.1.1)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -181,8 +180,6 @@ DEPENDENCIES
   carrierwave
   debugger
   devise
-  elasticsearch-model
-  elasticsearch-rails
   friendly_id (~> 5.0.3)
   jquery-rails
   mysql2
@@ -190,6 +187,7 @@ DEPENDENCIES
   rails (= 4.1.0.rc1)
   rails_12factor
   sass-rails (~> 4.0.1)
+  searchkick (~> 0.6.3)
   spring
   sqlite3
   turbolinks
