@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140420195001) do
+ActiveRecord::Schema.define(version: 20140420210017) do
 
   create_table "categories", force: true do |t|
     t.string  "name"
@@ -35,6 +35,17 @@ ActiveRecord::Schema.define(version: 20140420195001) do
   add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+
+  create_table "images", force: true do |t|
+    t.string   "alt",               default: ""
+    t.string   "hint",              default: ""
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pages", force: true do |t|
     t.integer  "category_id"
