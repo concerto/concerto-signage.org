@@ -4,13 +4,31 @@ class PagesController < ApplicationController
   def index
     @pages = Page.all
   end
+  
+  # GET /list_help
+  # GET /list_help.json
+  def list_help
+    @pages = Page.help
+  end  
+  
+  # GET /list_blog
+  # GET /list_blog.json
+  def list_blog
+    @pages = Page.announcements
+  end    
+  
+  # GET /list_v1help
+  # GET /list_v1help.json
+  def list_v1help
+    @pages = Page.v1_help
+  end     
 
   # GET /pages/1
   # GET /pages/1.json
   def show
     @page = Page.friendly.find(params[:id])
   end
-
+  
   # GET /pages/new
   def new
     @page = Page.new

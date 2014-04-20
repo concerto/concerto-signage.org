@@ -8,4 +8,5 @@ class Page < ActiveRecord::Base
   scope :v1_help, -> {joins(:category).where(categories: { name: "v1 Help"})}
   scope :help, -> {joins(:category).where(categories: { name: "Help"})}
   scope :announcements, -> {joins(:category).where(categories: { name: "Announcements"})}
+
 end

@@ -20,9 +20,12 @@
 
 <%= link_to "Overview", :controller => :pages, :action => :show, :id => "overview" %>
 <%= link_to "Demo", :controller => :pages, :action => :show, :id => "demo" %>
+<%= link_to "Help", :controller => :pages, :action => :list_help %>
+<a href="http://groups.google.com/group/concerto-digital-signage">Forum</a>
+<%= link_to "Blog", :controller => :pages, :action => :list_blog %>
 <%= link_to "Deploy", :controller => :pages, :action => :show, :id => "deploy" %>
-
-
+<%= link_to "v1", :controller => :pages, :action => :show, :id => "v1" %>
+<%= link_to "v1 Help", :controller => :pages, :action => :list_v1help %>
 <%= yield %>
 
 </body>
