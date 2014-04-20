@@ -56,3 +56,5 @@ gem 'debugger', group: [:development, :test]
 gem 'searchkick', '~> 0.6.3'
 
 gem 'rails_12factor', group: :production
+
+gem 'paperclip'

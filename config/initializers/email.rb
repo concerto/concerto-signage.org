@@ -1,4 +1,4 @@
-require 'CSV'
+require 'csv'
 #when using paas environments, emails list can be passed in as an ENV var
 if ENV["EMAILS"]
   env_emails = ENV["EMAILS"].split(',')
