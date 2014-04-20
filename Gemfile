@@ -35,9 +35,9 @@ gem 'omniauth-google-oauth2'
 
 gem "friendly_id", "~> 5.0.3"
 
-gem 'rich', :git => 'https://github.com/bastiaanterhorst/rich.git', :tag => '1.4.8'
 
-gem 'carrierwave'
+gem 'tinymce-rails'
+gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
