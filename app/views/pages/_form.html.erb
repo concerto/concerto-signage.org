@@ -22,7 +22,8 @@
   </div>
   <div class="field">
     <%= f.label :body %>
-    <%= f.text_area :body %>
+    <%= f.text_area :body, :class => "tinymce" %>
+    <%= tinymce %>
   </div>
   <div class="field">
     <%= f.label :category_id %>
@@ -36,8 +37,8 @@
     <label class="pure-checkbox">
       <%= f.check_box :is_active %> Visible Page
     </label>
-  </div>  
-  
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

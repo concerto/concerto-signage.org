@@ -38,6 +38,7 @@ gem "friendly_id", "~> 5.0.3"
 
 gem 'tinymce-rails'
 gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
+gem 'paperclip'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
