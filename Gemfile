@@ -35,7 +35,8 @@ gem 'omniauth-google-oauth2'
 
 gem "friendly_id", "~> 5.0.3"
 
-gem 'rich'
+gem 'rich', :git => 'https://github.com/bastiaanterhorst/rich.git', :tag => '1.4.8'
+
 gem 'carrierwave'
 
 # Use ActiveModel has_secure_password

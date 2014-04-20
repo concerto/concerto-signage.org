@@ -1,3 +1,17 @@
+GIT
+  remote: https://github.com/bastiaanterhorst/rich.git
+  revision: 5d670e90e5fab1579a8238e109c6df5a16cd3875
+  tag: 1.4.8
+  specs:
+    rich (1.4.7)
+      jquery-rails
+      kaminari
+      mime-types
+      paperclip
+      rack-raw-upload
+      rails (>= 3.2.0)
+      sass-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -146,14 +160,6 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (10.1.1)
-    rich (1.4.6)
-      jquery-rails
-      kaminari
-      mime-types
-      paperclip
-      rack-raw-upload
-      rails (>= 3.2.0)
-      sass-rails
     sass (3.2.14)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
@@ -208,7 +214,7 @@ DEPENDENCIES
   omniauth-google-oauth2
   rails (= 4.1.0.rc1)
   rails_12factor
-  rich
+  rich!
   sass-rails (~> 4.0.1)
   searchkick (~> 0.6.3)
   spring
