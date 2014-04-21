@@ -8,26 +8,42 @@
 </head>
 <body>
 
-<%= link_to "Overview", :controller => :pages, :action => :show, :id => "overview" %>
-<%= link_to "Demo", :controller => :pages, :action => :show, :id => "demo" %>
-<%= link_to "Help", :controller => :pages, :action => :list_help %>
-<a href="http://groups.google.com/group/concerto-digital-signage">Forum</a>
-<%= link_to "Blog", :controller => :pages, :action => :list_blog %>
-<%= link_to "Deploy", :controller => :pages, :action => :show, :id => "deploy" %>
-<%= link_to "v1", :controller => :pages, :action => :show, :id => "v1" %>
-<%= link_to "v1 Help", :controller => :pages, :action => :list_v1help %>
+  <div class="main-nav">
 
-<%= yield %>
+    <div class="content">
 
+      <div class="pure-menu pure-menu-open pure-menu-horizontal">
+        <%= link_to page_path("overview"), class: "pure-menu-heading" do %><%= image_tag("ConcertoLogo_main-nav.png", :alt => "Concerto", :width => 200) %><% end %>
 
-<div id="user_nav">
-  <% if user_signed_in? %>
-    Signed in as <%= current_user.name %>. Not you?
-    <%= link_to "Sign out", destroy_user_session_path %>
-  <% else %> 
-    <%= link_to "Sign in", user_omniauth_authorize_path(:google_oauth2) %>
-  <% end %>
+        <ul>
+          <li><%= link_to :controller => :pages, :action => :show, :id => "demo" do %><b>Try</b> Concerto<% end %></li>
+          <li><%= link_to :controller => :pages, :action => :show, :id => "deploy" do %><b>Deploy</b> Concerto<% end %></li>
+          <li><%= link_to :controller => :pages, :action => :list_help do %>Get <b>Help</b><% end %></li>
+          <li><%= link_to :controller => :pages, :action => :list_blog do %><b>Blog</b><% end %></li>
+          <li><a href="http://groups.google.com/group/concerto-digital-signage"><b>Forum</b></a></li>
+        </ul>
+      </div>
+
+      <%= link_to "v1", :controller => :pages, :action => :show, :id => "v1" %>
+      <%= link_to "v1 Help", :controller => :pages, :action => :list_v1help %>
+
+      <div id="user_nav">
+        <% if user_signed_in? %>
+          Signed in as <%= current_user.name %>. Not you?
+          <%= link_to "Sign out", destroy_user_session_path %>
+        <% else %> 
+          <%= link_to "Sign in", user_omniauth_authorize_path(:google_oauth2) %>
+        <% end %>
+      </div>
+
+    </div>
+
+  </div>
+
+<div class="content">
+  <%= yield %>
 </div>
+
 
 </body>
 </html>
