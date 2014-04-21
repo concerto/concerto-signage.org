@@ -14,6 +14,5 @@ Rails.application.routes.draw do
   end
 
   post '/tinymce_assets' => 'tinymce_assets#create'
-  match "pages/system/*" => "/system/"
 
 end
