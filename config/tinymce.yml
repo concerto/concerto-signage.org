@@ -1,7 +1,8 @@
 width : 700px
-toolbar1: styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | undo redo | link uploadimage
+toolbar1: styleselect | code | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | undo redo | link uploadimage
 plugins:
   - table
   - fullscreen
   - link
   - uploadimage
+  - code
