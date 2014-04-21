@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   resources :categories
-  resources :pages
 
   get 'pages/list_v1help'
   get 'pages/list_help'
   get 'pages/list_blog'
   root to: 'pages#show', id: 'frontpage'
+  
+  resources :pages
 
   devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
   devise_scope :user do
