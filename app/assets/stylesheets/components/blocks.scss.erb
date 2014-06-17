@@ -1,0 +1,17 @@
+body {
+  background: $white;
+}
+.content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 2em;
+
+  &.expose {
+    padding: 45px 0 45px 0;
+  }
+}
+.stripe {
+  @include vertical-gradient($grayLightest, $white);
+  border-top: solid 1px $white;
+  width: 100%;
+}

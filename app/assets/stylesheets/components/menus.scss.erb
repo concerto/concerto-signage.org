@@ -1,3 +1,25 @@
 .pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children {
 	background: none;
 }
+
+.main-nav {
+  @include vertical-gradient($white, #ebebeb);
+  border-bottom: solid 3px $white;
+
+  .pure-menu {
+    a {
+      padding: 30px 22px;
+      color: $black;
+      font-size: 1.3em;
+    }
+  }
+
+  .pure-menu.pure-menu-horizontal > ul {
+    height: auto;
+  }
+
+  .pure-menu.pure-menu-horizontal > .pure-menu-heading {
+    padding: 0px 25px;
+    padding-left: 0px;
+  }
+}
