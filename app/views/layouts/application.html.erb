@@ -20,21 +20,12 @@
         <li><%= link_to :controller => :pages, :action => :show, :id => "deploy" do %><b>Deploy</b> Concerto<% end %></li>
         <li><%= link_to :controller => :pages, :action => :list_help do %>Get <b>Help</b><% end %></li>
         <li><%= link_to :controller => :pages, :action => :list_blog do %><b>Blog</b><% end %></li>
-        <li><a href="http://groups.google.com/group/concerto-digital-signage"><b>Forum</b></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
       </ul>
     </div>
 
-    <%= link_to "v1", :controller => :pages, :action => :show, :id => "v1" %>
-    <%= link_to "v1 Help", :controller => :pages, :action => :list_v1help %>
-
-    <div id="user_nav">
-      <% if user_signed_in? %>
-        Signed in as <%= current_user.name %>. Not you?
-        <%= link_to "Sign out", destroy_user_session_path %>
-      <% else %> 
-        <%= link_to "Sign in", user_omniauth_authorize_path(:google_oauth2) %>
-      <% end %>
-    </div>
+    <%#= link_to "v1", :controller => :pages, :action => :show, :id => "v1" %>
+    <%#= link_to "v1 Help", :controller => :pages, :action => :list_v1help %>
 
   </div>
 
@@ -115,6 +106,15 @@ and text-based advertisements and target them to specific audiences.</h5>
   <p>Footer content</p>
 </div>
 
+
+<div id="user_nav">
+  <% if user_signed_in? %>
+    Signed in as <%= current_user.name %>. Not you?
+    <%= link_to "Sign out", destroy_user_session_path %>
+  <% else %> 
+    <%= link_to "Sign in", user_omniauth_authorize_path(:google_oauth2) %>
+  <% end %>
+</div>
 
 </body>
 </html>
