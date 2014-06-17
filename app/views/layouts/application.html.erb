@@ -8,37 +8,43 @@
 </head>
 <body>
 
-  <div class="main-nav">
+<div class="main-nav">
 
-    <div class="content">
+  <div class="content">
 
-      <div class="pure-menu pure-menu-open pure-menu-horizontal">
-        <%= link_to page_path("overview"), class: "pure-menu-heading" do %><%= image_tag("ConcertoLogo_main-nav.png", :alt => "Concerto", :width => 200) %><% end %>
+    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+      <%= link_to page_path("overview"), class: "pure-menu-heading" do %><%= image_tag("ConcertoLogo_main-nav.png", :alt => "Concerto", :width => 200) %><% end %>
 
-        <ul>
-          <li><%= link_to :controller => :pages, :action => :show, :id => "demo" do %><b>Try</b> Concerto<% end %></li>
-          <li><%= link_to :controller => :pages, :action => :show, :id => "deploy" do %><b>Deploy</b> Concerto<% end %></li>
-          <li><%= link_to :controller => :pages, :action => :list_help do %>Get <b>Help</b><% end %></li>
-          <li><%= link_to :controller => :pages, :action => :list_blog do %><b>Blog</b><% end %></li>
-          <li><a href="http://groups.google.com/group/concerto-digital-signage"><b>Forum</b></a></li>
-        </ul>
-      </div>
+      <ul>
+        <li><%= link_to :controller => :pages, :action => :show, :id => "demo" do %><b>Try</b> Concerto<% end %></li>
+        <li><%= link_to :controller => :pages, :action => :show, :id => "deploy" do %><b>Deploy</b> Concerto<% end %></li>
+        <li><%= link_to :controller => :pages, :action => :list_help do %>Get <b>Help</b><% end %></li>
+        <li><%= link_to :controller => :pages, :action => :list_blog do %><b>Blog</b><% end %></li>
+        <li><a href="http://groups.google.com/group/concerto-digital-signage"><b>Forum</b></a></li>
+      </ul>
+    </div>
 
-      <%= link_to "v1", :controller => :pages, :action => :show, :id => "v1" %>
-      <%= link_to "v1 Help", :controller => :pages, :action => :list_v1help %>
+    <%= link_to "v1", :controller => :pages, :action => :show, :id => "v1" %>
+    <%= link_to "v1 Help", :controller => :pages, :action => :list_v1help %>
 
-      <div id="user_nav">
-        <% if user_signed_in? %>
-          Signed in as <%= current_user.name %>. Not you?
-          <%= link_to "Sign out", destroy_user_session_path %>
-        <% else %> 
-          <%= link_to "Sign in", user_omniauth_authorize_path(:google_oauth2) %>
-        <% end %>
-      </div>
-
+    <div id="user_nav">
+      <% if user_signed_in? %>
+        Signed in as <%= current_user.name %>. Not you?
+        <%= link_to "Sign out", destroy_user_session_path %>
+      <% else %> 
+        <%= link_to "Sign in", user_omniauth_authorize_path(:google_oauth2) %>
+      <% end %>
     </div>
 
   </div>
+
+</div>
+
+
+<div class="stripe blue-images">
+  <h1 class="center">Digital Signage for Everyone.</h1>
+</div>
+
 
 <div class="stripe">
   <div class="content expose">
@@ -95,6 +101,18 @@ and text-based advertisements and target them to specific audiences.</h5>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et vulputate purus, vitae tincidunt ante. Maecenas tincidunt, magna at varius varius, enim justo imperdiet eros, et lacinia orci diam sit amet dolor. Cras aliquam dui mauris, et fermentum dui fringilla nec.</p>
 
   <a href="#" title="">Link tag illustration</a>
+</div>
+
+
+
+<div class="stripe blue-images center">
+  <div class="content" style="padding: 1.8em 0 1.6em 0;">
+    <%= image_tag("footer_logo.png", :alt => "Concerto") %>
+  </div>
+</div>
+
+<div id="footer" class="stripe">
+  <p>Footer content</p>
 </div>
 
 
