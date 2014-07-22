@@ -35,10 +35,13 @@ gem 'omniauth-google-oauth2'
 
 gem "friendly_id", "~> 5.0.3"
 
-
 gem 'tinymce-rails'
 gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
 gem 'paperclip'
+
+# Github's Official API Client Library
+gem 'octokit', '~> 3.0'
+gem 'faraday-http-cache'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
