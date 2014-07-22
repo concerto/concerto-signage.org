@@ -18,6 +18,8 @@ module PagesHelper
   end
 
 
+  #Returns a Tuple <release_version, release_date, release_url> representing the
+  #latest release we've published in Github.
   def latest_release
     releases = Octokit.releases 'concerto/concerto'
     #Find the latest non-draft non-prerelease release.
@@ -26,5 +28,7 @@ module PagesHelper
     release_version = release.name
     release_date = release.published_at.strftime("%m/%d/%Y")
     release_url = release.zipball_url
+    return release_version, release_date, release_url
+  end
 
 end
