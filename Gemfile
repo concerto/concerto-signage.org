@@ -7,7 +7,7 @@ gem 'rails', '4.1.0.rc1'
 
 # Use sqlite3 for development, mysql for production
 gem 'sqlite3', group: [:development, :test]
-gem 'mysql2', group: :production
+gem 'mysql', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.1'
@@ -52,8 +52,8 @@ gem 'unicorn', group: :production
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Use debugger
-gem 'debugger', group: [:development, :test]
+# Use a debugger
+gem 'byebug', group: [:development, :test]
 
 # ElasticSearch based searching.
 gem 'searchkick', '~> 0.6.3'
