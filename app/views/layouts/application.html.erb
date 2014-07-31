@@ -20,7 +20,12 @@
         <li><%= link_to :controller => :pages, :action => :show, :id => "deploy" do %><b>Deploy</b> Concerto<% end %></li>
         <li><%= link_to :controller => :pages, :action => :list_help do %>Get <b>Help</b><% end %></li>
         <li><%= link_to :controller => :pages, :action => :list_blog do %><b>Blog</b><% end %></li>
-        <li><a href="#"><i class="fa fa-search"></i></a></li>
+        <li id="nav-search-toggle"><a href="#"><i class="fa fa-search"></i></a></li>
+        
+        <!-- search: hidden by default -->
+        <li id="nav-search">
+          <input type="search"></input>
+        </li>
       </ul>
     </div>
 
