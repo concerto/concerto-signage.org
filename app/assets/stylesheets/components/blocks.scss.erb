@@ -1,6 +1,11 @@
 body {
+  background: #383d3f;
+}
+
+#page-content {
   background: $white;
 }
+
 .content {
   max-width: 980px;
   margin: 0 auto;
@@ -26,9 +31,20 @@ body {
   h5 { color: $gray; }
 }
 
+.block {
+
+  &.white {
+    background: $white;
+  }
+}
+
 
 #footer {
   background: #383d3f;
   @include box-shadow(inset 0 2px 2px $grayDarkest);
   border-top: solid 1px #71adcb;
+}
+
+.default-padding {
+  padding: 24px;
 }

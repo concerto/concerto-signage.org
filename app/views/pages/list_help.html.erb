@@ -1,31 +1,44 @@
-<h1>Listing pages</h1>
+<div class="stripe blue-images">
+  <div class="content">
 
-<table>
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Title</th>
-      <th>Summary</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+    <h1>Concerto Help Center</h1>
 
-  <tbody>
-    <% @pages.each do |page| %>
-      <tr>
-        <td><%= Category.find(page.category_id).name %></td>
-        <td><%= page.title %></td>
-        <td><%= page.summary %></td>
-        <td><%= link_to 'Show', page %></td>
-        <td><%= link_to 'Edit', edit_page_path(page) %></td>
-        <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <div class="block white">
+      <div class="default-padding">
+        <h1>Listing pages</h1>
 
-<br>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Title</th>
+              <th>Summary</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
 
-<%= link_to 'New Page', new_page_path %>
+          <tbody>
+            <% @pages.each do |page| %>
+              <tr>
+                <td><%= Category.find(page.category_id).name %></td>
+                <td><%= page.title %></td>
+                <td><%= page.summary %></td>
+                <td><%= link_to 'Show', page %></td>
+                <td><%= link_to 'Edit', edit_page_path(page) %></td>
+                <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+        <br>
+
+        <%= link_to 'New Page', new_page_path %>
+
+      </div>
+    </div>
+
+  </div>
+</div>

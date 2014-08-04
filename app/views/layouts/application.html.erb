@@ -27,10 +27,13 @@
 
 </div>
 
-<%= yield %>
+
+<div id="page-content">
+  <%= yield %>
+</div>
 
 
-<div class="stripe blue-images center">
+<div class="stripe blue-images center" style="border-top: none;">
   <div class="content" style="padding: 1.8em 0 1.6em 0;">
     <%= image_tag("footer_logo.png", :alt => "Concerto") %>
   </div>
