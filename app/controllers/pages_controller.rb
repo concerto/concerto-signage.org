@@ -23,7 +23,13 @@ class PagesController < ApplicationController
   # GET /list_v1help.json
   def list_v1help
     @pages = Page.v1_help
-  end     
+  end
+
+  # GET /list_v1help
+  # GET /list_v1help.json
+  def styleguide
+    @pages = Page.styleguide
+  end
 
   # GET /pages/1
   # GET /pages/1.json

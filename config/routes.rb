@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'pages/list_v1help'
   get 'pages/list_help'
   get 'pages/list_blog'
+  get 'pages/styleguide'
   root to: 'pages#show', id: 'frontpage'
   
   resources :pages
