@@ -10,19 +10,25 @@ class PagesController < ApplicationController
   # GET /list_help
   # GET /list_help.json
   def list_help
-    @pages = Page.help
+    respond_to do |format|
+      format.html { render :template => "pages/list_help" }
+    end
   end
 
   # GET /list_blog
   # GET /list_blog.json
   def list_blog
-    @pages = Page.announcements
+    respond_to do |format|
+      format.html { render :template => "pages/list_blog" }
+    end
   end
 
   # GET /list_v1help
   # GET /list_v1help.json
   def list_v1help
-    @pages = Page.v1_help
+    respond_to do |format|
+      format.html { render :template => "pages/list_v1help" }
+    end
   end
 
   # GET /list_v1help
