@@ -229,10 +229,10 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
   # Expects url callback to be concerto-signage.127.0.0.1.xip.io or the dev concerto-signage url
-  config.omniauth :google_oauth2, 
+  config.omniauth :google_oauth2,
                   '912478395406-oor7o0uik23kh88pibsg8cbkmjpups4r.apps.googleusercontent.com',
                   '5wlVCxzIroOPY4HklSNwFwuM',
-		  :strategy_class => OmniAuth::Strategies::GoogleOauth2
+                  :strategy_class => OmniAuth::Strategies::GoogleOauth2
 
 
   # ==> Warden configuration
