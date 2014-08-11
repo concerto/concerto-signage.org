@@ -5,13 +5,9 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     if !user
       flash.notice = "Failed to Sign In, You Are Not an Authorized User!"
       redirect_to :controller => :pages, :action => :show, :id => :frontpage
-    elsif user.persisted?
-      flash.notice = "Signed in Through Google!"
-      redirect_to :controller => :pages, :action => :show, :id => :frontpage
     else
       flash.notice = "Signed in Through Google!"
-      session["devise.user_attributes"] = user.attributes
-      redirect_to :controller => :pages, :action => :show, :id => :frontpage
+      sign_in_and_redirect user
     end
   end
 
