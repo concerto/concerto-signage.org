@@ -1,24 +1,24 @@
 class PagesController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :show, :list_help, :list_blog, :list_v1help]
-  
+
   # GET /pages
   # GET /pages.json
   def index
     @pages = Page.all
   end
-  
+
   # GET /list_help
   # GET /list_help.json
   def list_help
     @pages = Page.help
-  end  
-  
+  end
+
   # GET /list_blog
   # GET /list_blog.json
   def list_blog
     @pages = Page.announcements
-  end    
-  
+  end
+
   # GET /list_v1help
   # GET /list_v1help.json
   def list_v1help
@@ -28,7 +28,9 @@ class PagesController < ApplicationController
   # GET /list_v1help
   # GET /list_v1help.json
   def styleguide
-    @pages = Page.styleguide
+    respond_to do |format|
+      format.html { render :template => "pages/styleguide" }
+    end
   end
 
   # GET /pages/1
@@ -36,7 +38,7 @@ class PagesController < ApplicationController
   def show
     @page = Page.friendly.find(params[:id])
   end
-  
+
   # GET /pages/new
   def new
     @page = Page.new
