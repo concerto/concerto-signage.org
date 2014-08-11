@@ -7,12 +7,12 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
       redirect_to :controller => :pages, :action => :show, :id => :frontpage
     elsif user.persisted?
       flash.notice = "Signed in Through Google!"
-      sign_in_and_redirect user
+      redirect_to :controller => :pages, :action => :show, :id => :frontpage
     else
       flash.notice = "Signed in Through Google!"
       session["devise.user_attributes"] = user.attributes
       redirect_to :controller => :pages, :action => :show, :id => :frontpage
     end
   end
-  
+
 end
