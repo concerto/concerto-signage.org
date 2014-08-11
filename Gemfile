@@ -31,6 +31,7 @@ gem 'turbolinks'
 gem 'spring',        group: :development
 
 gem 'devise'
+# If someone changes these versions I will stab you
 gem 'omniauth-google-oauth2', '0.2.2'
 gem 'omniauth-oauth2', "1.1.2"
 

@@ -5,10 +5,13 @@ if ENV["EMAILS"]
 end
 
 #read local file with comma seperated emails
-file_emails = File.read("./config/local_auth_emails").parse_csv
+#using split instead of parse_csv because this will allow csv,newlines and spaces!
+file_emails = File.read("./config/local_auth_emails").split(/[\s,']/)
 if ENV["EMAILS"]
   emails = env_emails | file_emails #put the arrays together excluding duplicates
 else
   emails = file_emails
 end
+Rails.logger.debug file_emails
+Rails.logger.debug emails
 ConcertoSignage::Application.config.authorized_emails = emails
