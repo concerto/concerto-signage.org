@@ -31,7 +31,8 @@ gem 'turbolinks'
 gem 'spring',        group: :development
 
 gem 'devise'
-gem 'omniauth-google-oauth2'
+gem 'omniauth-google-oauth2', '0.2.2'
+gem 'omniauth-oauth2', "1.1.2"
 
 gem "friendly_id", "~> 5.0.3"
 
