@@ -7,7 +7,7 @@ gem 'rails', '~> 4.1.4'
 
 # Use sqlite3 for development, mysql for production
 gem 'sqlite3', group: [:development, :test]
-gem 'mysql', group: :production
+gem 'mysql2', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.1'
