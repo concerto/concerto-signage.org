@@ -1,7 +1,9 @@
 relative_urls: false
 remove_script_host: false
-width: 700px
-toolbar1: styleselect | code | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | undo redo | link uploadimage
+width: 100%
+height: 500px
+menubar: false
+toolbar1: styleselect | bold italic underline | bullist numlist | undo redo | link uploadimage | code
 plugins:
   - table
   - fullscreen

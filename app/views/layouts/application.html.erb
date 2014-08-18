@@ -13,7 +13,7 @@
   <div class="content">
 
     <div class="pure-menu pure-menu-open pure-menu-horizontal">
-      <%= link_to page_path("overview"), class: "pure-menu-heading" do %><%= image_tag("ConcertoLogo_main-nav.png", :alt => "Concerto", :width => 200, :class => "pure-img") %><% end %>
+      <%= link_to page_path("overview"), class: "pure-menu-heading" do %><%= image_tag("ConcertoLogo_main-nav.png", :alt => "Concerto", :class => "main-logo pure-img") %><% end %>
 
       <ul>
         <li class="<%= 'active' if current_page?(controller: 'pages', action: 'show', id: 'demo') %>"><%= link_to :controller => :pages, :action => :show, :id => "demo" do %><b>Try</b> Concerto<% end %></li><li class="<%= 'active' if current_page?(controller: 'pages', action: 'show', id: 'deploy') %>"><%= link_to :controller => :pages, :action => :show, :id => "deploy" do %><b>Deploy</b> Concerto<% end %></li><li class="<%= 'active' if current_page?(controller: 'pages', action: 'list_help') %>"><%= link_to :controller => :pages, :action => :list_help do %>Get <b>Help</b><% end %></li><li class="<%= 'active' if current_page?(controller: 'pages', action: 'list_blog') %>"><%= link_to :controller => :pages, :action => :list_blog do %><b>Blog</b><% end %></li><li id="nav-search-toggle"><a href="#"><i class="fa fa-search"></i></a></li><!-- search: hidden by default --><li id="nav-search"><input type="search"></input></li>

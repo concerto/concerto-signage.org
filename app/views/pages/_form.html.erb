@@ -14,15 +14,15 @@
 
   <div class="field">
     <%= f.label :title %>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :class => "pure-input-1" %>
   </div>
   <div class="field">
     <%= f.label :summary %>
-    <%= f.text_area :summary %>
+    <%= f.text_area :summary, :class => "pure-input-1" %>
   </div>
   <div class="field">
     <%= f.label :body %>
-    <%= f.text_area :body, :class => "tinymce" %>
+    <%= f.text_area :body, :class => "tinymce pure-input-1" %>
     <%= tinymce %>
   </div>
   <div class="field">
@@ -40,6 +40,6 @@
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit button_text, :class => "pure-button pure-button-primary" %>
   </div>
 <% end %>
