@@ -7,12 +7,12 @@
   border-bottom: solid 2px $white;
   @include clearfix();
 
-  .pure-menu {
-    a {
-      padding: 32px 14px;
-      color: $black;
-      //font-size: 1.3em;
-    }
+  .pure-menu a { 
+    color: $black; 
+  }
+
+  .pure-menu-horizontal a {
+    padding: 32px 14px;
   }
 
   img.main-logo {
@@ -50,4 +50,8 @@
       }
     }
   }
+}
+
+#full-main-menu {
+  display: none;
 }
