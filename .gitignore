@@ -26,3 +26,4 @@ rerun.txt
 .DS_Store
 .powenv
 .rvmrc
+.ruby-version

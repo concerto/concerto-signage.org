@@ -198,7 +198,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   octokit (~> 3.0)
-  omniauth-google-oauth2
+  omniauth-google-oauth2 (= 0.2.2)
   omniauth-oauth2
   paperclip
   rails (~> 4.1.4)
