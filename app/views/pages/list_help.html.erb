@@ -20,7 +20,7 @@
           </thead>
 
           <tbody>
-            <% @pages.each do |page| %>
+            <% Page.help do |page| %>
               <tr>
                 <td><%= Category.find(page.category_id).name %></td>
                 <td><%= page.title %></td>
