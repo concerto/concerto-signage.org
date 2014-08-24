@@ -9,7 +9,3 @@ puts 'Creating Try Page'
 Page.where(title: "Try", language: "en").first_or_create
 puts 'Creating Deploy Page'
 Page.where(title: "Deploy", language: "en").first_or_create
-puts 'Creating List Help Page'
-Page.where(title: "List Help", language: "en").first_or_create
-puts 'Creating List Blog Page'
-Page.where(title: "List Blog", language: "en").first_or_create
