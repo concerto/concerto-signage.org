@@ -34,8 +34,9 @@
         </table>
 
         <br>
-
-        <%= link_to 'New Page', new_page_path %>
+        <% if current_user %>
+          <%= link_to 'New Page', new_page_path %>
+        <% end %>
 
       </div>
     </div>
