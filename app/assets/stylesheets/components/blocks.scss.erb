@@ -11,6 +11,7 @@ body {
   margin: 0 auto;
   padding: 0 1em;
 
+
   &.expose {
     padding: 45px 0 45px 0;
   }
@@ -21,9 +22,15 @@ body {
   width: 100%;
 
   &.blue-images {
-    @include horizontal-gradient(#4c9ec7, $concerto-blue-2);
-  
+    @include horizontal-gradient(#4c9ec7, $concerto-blue-2, '/assets/blue-images.png');
+
   }
+}
+
+.horizontal-rule {
+  border-top: solid 1px $white;
+  @include vertical-gradient(#f1f1f1, $white);
+  background-size: 100px;
 }
 
 .expose-headline {
