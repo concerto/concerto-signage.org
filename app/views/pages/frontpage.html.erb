@@ -1,6 +1,18 @@
+<% release_version, release_date, release_url = latest_release() %>
+
 <div class="stripe blue-images">
   <div class="content fp-header">
-    Digital Signage for Everyone
+    <div class="subheader">
+      Digital Signage for Everyone<br>
+      <div class="slogan gray">Concerto is an open software platform for using digital displays to inform and persuade. </div>
+      <%= link_to("Download Concerto", release_url, class: "download-btn") %>
+      <span class="small gray download-details"> Latest version: <br> <%= release_version %>, released <%= release_date %></span>
+    </div>
+    <div class="concerto-screen">
+      <%= image_tag('/assets/concerto-lcd.png') %>
+    </div>
+    <div class="clearfix"></div>
+    Da Bat
   </div>
 </div>
 <div class="horizontal-rule">

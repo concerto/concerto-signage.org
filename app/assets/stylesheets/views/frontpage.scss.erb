@@ -3,8 +3,62 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .fp-header {
-  height: 550px;
   color: $white;
   font-size: 48px;
-  padding-top: 100px !important;
+  padding-top: 80px !important;
+
+  .subheader {
+    float:left;
+    width:560px;
+
+    .slogan {
+      padding-top: 10px;
+      line-height: 35px;
+      font-size: 30px;
+    }
+
+    .download-btn {
+      float:left;
+      margin-top: 30px;
+      color: $white;
+      display: block;
+      font-size: 20px;
+      background-image: url("/assets/download-btn.png");
+      background-repeat: no-repeat;
+      background-position: center right;
+      line-height: 66px;
+      box-sizing: border-box;
+      text-align: center;
+      width: 275px;
+      height: 66px;
+    }
+
+    .download-btn:hover {
+      background-image: url("/assets/download-btn-hover.png") !important;
+    }
+
+    .download-details {
+      float:left;
+      display:block;
+      margin-top: 30px;
+      padding: 10px 0px 0px 15px;
+    }
+  }
+
+  .concerto-screen {
+    width: 380px;
+    padding-left:40px;
+    float:left;
+  }
+
+  .header-footer {
+  }
+
+  .small {
+    font-size: 16px;
+  }
+
+  .gray {
+    color: #e2e2e2;
+  }
 }

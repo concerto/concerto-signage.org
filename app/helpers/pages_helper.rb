@@ -26,8 +26,8 @@ module PagesHelper
     release = releases.detect {|f| f[:draft] == false && f[:prerelease] == false }
 
     release_version = release.name
-    release_date = release.published_at.strftime("%m/%d/%Y")
-    release_url = release.zipball_url
+    release_date = release.published_at.strftime("%-m/%-d/%Y")
+    release_url = release.tarball_url
     return release_version, release_date, release_url
   end
 

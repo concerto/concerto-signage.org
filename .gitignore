@@ -27,3 +27,4 @@ rerun.txt
 .powenv
 .rvmrc
 .ruby-version
+*.swp
