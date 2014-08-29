@@ -1,12 +1,17 @@
-<% release_version, release_date, release_url = latest_release() %>
+<%
+  release_version, release_date, release_url = latest_release()
+  watchers_count = stargazers_count()
+%>
 
 <div class="stripe blue-images">
   <div class="content fp-header">
     <div class="subheader">
-      Digital Signage for Everyone<br>
-      <div class="slogan gray">Concerto is an open software platform for using digital displays to inform and persuade. </div>
+      <div class="header large white">Digital Signage for Everyone</div>
+      <div class="slogan medium gray">Concerto is an open software platform for using digital displays to inform and persuade. </div>
       <%= link_to("Download Concerto", release_url, class: "download-btn") %>
       <span class="small gray download-details"> Latest version: <br> <%= release_version %>, released <%= release_date %></span>
+      <div class="clearfix"></div>
+      <span class="small white watchers"> <i class="fa fa-star"></i> <%= watchers_count %> code watchers</span>
     </div>
     <div class="concerto-screen">
       <%= image_tag('/assets/concerto-lcd.png') %>
