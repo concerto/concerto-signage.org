@@ -1,13 +1,14 @@
 <%
   release_version, release_date, release_url = latest_release()
   watchers_count = stargazers_count()
+  user_icon_url, user, comment, commit_url = latest_commit()
 %>
 
 <div class="stripe blue-images">
   <div class="content fp-header">
     <div class="subheader">
       <div class="header large white">Digital Signage for Everyone</div>
-      <div class="slogan medium gray">Concerto is an open software platform for using digital displays to inform and persuade. </div>
+      <div class="slogan medium">Concerto is an open software platform for using digital displays to inform and persuade. </div>
       <%= link_to("Download Concerto", release_url, class: "download-btn") %>
       <span class="small gray download-details"> Latest version: <br> <%= release_version %>, released <%= release_date %></span>
       <div class="clearfix"></div>
@@ -17,7 +18,31 @@
       <%= image_tag('/assets/concerto-lcd.png') %>
     </div>
     <div class="clearfix"></div>
-    Da Bat
+  </div>
+  <div class="updates-bar">
+    <div class="content">
+      <div class="github-latest smallest gray">
+        The latest<br>
+        from Github:
+      </div>
+      <div class="updates-content">
+        <%= image_tag(user_icon_url, size: "40") %>
+        <span class="updates-text smallest white">
+          <%= user %>:
+        </span>
+        <span class="updates-text smallest">
+          <%= link_to(comment, commit_url, class: "gray") %>
+        </span>
+        <span class="announcements-content">
+          <%= image_tag ("/assets/fp-seperator.png") %>
+          <span class="announcements-text smallest gray">
+            Latest Announcement:<br>
+            <span class="white">June 1</span> Concerto 2.0.1, a Bug Fix Update  >>
+          </span>
+        </span>
+      </div>
+    </div>
+
   </div>
 </div>
 <div class="horizontal-rule">

@@ -12,9 +12,10 @@ module PagesHelper
     commit = commits.first
     user = commit.author.login
     user_icon_url = commit.author.avatar_url
+    commit_url = commit.html_url
     #need to figure out how much we will truncate
-    comment = commit.commit.message
-    return user_icon_url, user, comment
+    comment = commit.commit.message[0..25] + "... >>"
+    return user_icon_url, user, comment, commit_url
   end
 
 
