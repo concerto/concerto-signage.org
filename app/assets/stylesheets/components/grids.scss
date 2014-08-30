@@ -1,0 +1,16 @@
+.grid {
+
+  &.twocolumns {
+    float: left;
+    width: 50%;
+  }
+
+  &.threecolumns {
+    float: left;
+    width: 27%;
+
+    &.margin {
+      margin-right:70px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :authenticate_user!, :except => [:index, :show, :list_help, :list_announcements, :list_v1help, :frontpage]
+  before_action :authenticate_user!, :except => [:index, :show, :list_help, :list_announcements, :list_v1help, :frontpage, :styleguide]
 
   # GET /pages
   # GET /pages.json
