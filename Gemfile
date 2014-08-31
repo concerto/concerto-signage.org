@@ -61,3 +61,6 @@ gem 'byebug', group: [:development, :test]
 gem 'searchkick', '~> 0.6.3'
 
 gem 'rails_12factor', group: :production
+
+# Obfuscate Mailto
+gem 'actionview-encoded_mail_to', '~> 1.0.4'

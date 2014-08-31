@@ -149,7 +149,32 @@
   <div class="content expose">
     <div class="center expose-headline">
       <h1>What if I need help</h1>
-      <h5>Concerto is comprised of two parts: a server and a content player.</h5>
+      <div class="need-help">
+        <div class="help-pages grid twocolumns">
+          <%= link_to(action: "list_help") do %>
+            <%= image_tag("/assets/browse-help-pages.png") %>
+          <% end %>
+          <p>
+            Browse help pages about deploying, using, and maintaining Concerto.
+          </p>
+        </div>
+        <div class="post-group grid twocolumns">
+          <%= link_to("https://groups.google.com/d/forum/concerto-digital-signage") do %>
+            <%= image_tag("/assets/ask-google-group.png") %>
+          <% end %>
+          <p>
+            Post on the Google Group and get your questions answered by our community.
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="send-email">
+          <b>Still having trouble?</b>
+          <p>
+            Send an email to the Concerto Core Team on our
+            <%= mail_to "team@concerto-signage.org", "mailing list.", encode: "hex" %>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
