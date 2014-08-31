@@ -115,6 +115,32 @@
     <div class="center expose-headline">
       <h1>How to Get Started</h1>
       <h5>Concerto is comprised of two parts: a server and a content player.</h5>
+      <div class="getting-started">
+        <div class="concerto-server grid twocolumns">
+          <h3>Concerto Server</h3>
+          <%= image_tag("/assets/getting-started-concerto-server.png", class: "server") %>
+          <p>
+            The Concerto Server runs the software for an administration panel
+            where users go to manage their digital signage networks and moderate content.
+            <br><br>
+            <%= link_to("Download the server software", "http://dl.concerto-signage.org/concerto_server-2.1.0_Build1.ova") %>
+          </p>
+        </div>
+        <div class="concerto-player grid twocolumns">
+          <h3>Concerto Player</h3>
+          <%= image_tag("/assets/getting-started-concerto-player.png", class: "player") %>
+          <p>
+            Each Concerto display is powered by a simple, inexpensive computer.
+            These can run the Concerto Player, a lightweight Linux distribution.
+            <br><br>
+            <%= link_to("Download the player software", "http://dl.concerto-signage.org/concerto_player-0.8.0.img.zip") %>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="read-deployment">
+          <%= link_to("Read the Deployment Instructions", action: "show", id: "deploy") %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
