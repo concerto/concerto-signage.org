@@ -7,12 +7,12 @@
 <div class="stripe blue-images">
   <div class="content fp-header">
     <div class="subheader">
-      <div class="header large white">Digital Signage for Everyone</div>
-      <div class="slogan medium">Concerto is an open software platform for using digital displays to inform and persuade. </div>
-      <%= link_to("Download Concerto", release_url, class: "download-btn") %>
-      <span class="small gray download-details"> Latest version: <br> <%= release_version %>, released <%= release_date %></span>
+      <h1 class="text-header">Digital Signage for Everyone</h1>
+      <h4 class="text-accent-quartiary">Concerto is an open software platform for using digital displays to inform and persuade. </h5>
+      <%= link_to("Download Concerto", release_url, class: "download-btn text-header") %>
+      <p class="text-accent-tertiary download-details"> Latest version: <br> <%= release_version %>, released <%= release_date %></span>
       <div class="clearfix"></div>
-      <span class="small white watchers"> <i class="fa fa-star"></i> <%= watchers_count %> code watchers</span>
+      <p class="text-header watchers"> <i class="fa fa-star"></i> <%= watchers_count %> code watchers</p>
     </div>
     <div class="concerto-screen">
       <%= image_tag('/assets/concerto-lcd.png') %>
@@ -21,24 +21,25 @@
   </div>
   <div class="updates-bar">
     <div class="content">
-      <div class="github-latest smallest gray">
-        The latest<br>
-        from Github:
+      <div class="github-latest">
+        <p class="text-accent-tertiary">
+          The latest<br>from Github:
+        </p>
       </div>
       <div class="updates-content">
         <%= image_tag(user_icon_url, size: "40") %>
-        <span class="updates-text smallest white">
+        <p class="text-header updates-text">
           <%= user %>:
-        </span>
-        <span class="updates-text smallest">
-          <%= link_to(comment, commit_url, class: "gray") %>
-        </span>
+        </p>
+        <p class="updates-text">
+          <%= link_to(comment, commit_url, class: "text-accent-tertiary") %>
+        </p>
         <span class="announcements-content">
           <%= image_tag ("/assets/fp-seperator.png") %>
-          <span class="announcements-text smallest gray">
+          <p class="announcements-text text-accent-tertiary">
             Latest Announcement:<br>
-            <span class="white">June 1</span> Concerto 2.0.1, a Bug Fix Update  >>
-          </span>
+            <span class="text-header">June 1</span> Concerto 2.0.1, a Bug Fix Update  >>
+          </p>
         </span>
       </div>
     </div>
@@ -50,22 +51,22 @@
   <div class="content expose">
     <div class="center expose-headline">
       <h1>What is Concerto?</h1>
-      <h5>
+      <h6 class="text-accent-primary">
         An open source digital signage package, Concerto allows you to share videos, graphic flyers,
         and text-based advertisements and target them to specific audiences.
-      </h5>
+      </h6>
       <%= image_tag("/assets/what-is-concerto.png", class: "fp-graphics") %>
       <div class="grid threecolumns margin">
-        <h4>Emphasize a Few. Incorporate All.</h4>
-        <p class="description">
+        <h5>Emphasize a Few. Incorporate All.</h5>
+        <p class="description text-accent-secondary">
           Concerto ads are organized into categories called feeds, which can be mixed
           and matched differently on each separate Concerto display to cater to
           distinct locations and audiences.
         </p>
       </div>
       <div class="grid threecolumns margin">
-        <h4>Make it Memorable. Put it Everywhere.</h4>
-        <p class="description">
+        <h5>Make it Memorable. Put it Everywhere.</h5>
+        <p class="description text-accent-secondary">
           Because Concerto lives on the Web, any Internet-connected device can
           display it. That means that televisions, phones, tablets, personal
           screensavers, and other websites can all host your exciting
@@ -73,8 +74,8 @@
         </p>
       </div>
       <div class="grid threecolumns">
-        <h4>Cut Costs. Grow Your Network Organically.</h4>
-        <p class="description">
+        <h5>Cut Costs. Grow Your Network Organically.</h5>
+        <p class="description text-accent-secondary">
           As fully open source software, Concerto can be deployed and used for
           free. Affordable hardware and a flexible architecture enable many
           different organizations to grow your Concerto network.
@@ -89,7 +90,7 @@
   <div class="content expose">
     <div class="center expose-headline">
       <h1>Take a Look</h1>
-      <h5>Concerto is designed from the ground up to be simple, quick, and elegant.</h5>
+      <h6 class="text-accent-primary">Concerto is designed from the ground up to be simple, quick, and elegant.</h6>
       <div class="screenshots">
         <div class="main-nav">
           <ul id="navlist">
@@ -114,12 +115,12 @@
   <div class="content expose">
     <div class="center expose-headline">
       <h1>How to Get Started</h1>
-      <h5>Concerto is comprised of two parts: a server and a content player.</h5>
+      <h6 class="text-accent-primary">Concerto is comprised of two parts: a server and a content player.</h6>
       <div class="getting-started">
         <div class="concerto-server grid twocolumns">
           <h3>Concerto Server</h3>
           <%= image_tag("/assets/getting-started-concerto-server.png", class: "server") %>
-          <p>
+          <p class="text-accent-secondary">
             The Concerto Server runs the software for an administration panel
             where users go to manage their digital signage networks and moderate content.
             <br><br>
@@ -129,7 +130,7 @@
         <div class="concerto-player grid twocolumns">
           <h3>Concerto Player</h3>
           <%= image_tag("/assets/getting-started-concerto-player.png", class: "player") %>
-          <p>
+          <p class="text-accent-secondary">
             Each Concerto display is powered by a simple, inexpensive computer.
             These can run the Concerto Player, a lightweight Linux distribution.
             <br><br>
@@ -154,7 +155,7 @@
           <%= link_to(action: "list_help") do %>
             <%= image_tag("/assets/browse-help-pages.png") %>
           <% end %>
-          <p>
+          <p class="text-accent-secondary">
             Browse help pages about deploying, using, and maintaining Concerto.
           </p>
         </div>
@@ -162,14 +163,14 @@
           <%= link_to("https://groups.google.com/d/forum/concerto-digital-signage") do %>
             <%= image_tag("/assets/ask-google-group.png") %>
           <% end %>
-          <p>
+          <p class="text-accent-secondary">
             Post on the Google Group and get your questions answered by our community.
           </p>
         </div>
         <div class="clearfix"></div>
         <div class="send-email">
           <b>Still having trouble?</b>
-          <p>
+          <p class="text-accent-secondary">
             Send an email to the Concerto Core Team on our
             <%= mail_to "team@concerto-signage.org", "mailing list.", encode: "hex" %>
           </p>

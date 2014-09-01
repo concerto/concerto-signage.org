@@ -13,13 +13,11 @@
     .slogan {
       padding-top: 10px;
       line-height: 35px;
-      color: #e2e2e2;
     }
 
     .download-btn {
       float:left;
       margin-top: 30px;
-      color: $white;
       display: block;
       font-size: 20px;
       background-image: url("/assets/download-btn.png");
@@ -34,6 +32,7 @@
 
     .download-btn:hover {
       background-image: url("/assets/download-btn-hover.png") !important;
+      @extend .text-header;
     }
 
     .download-details {
@@ -59,7 +58,6 @@
   width: 100%;
   min-height: 70px;
   background-color: rgba(0,0,0,0.46);
-  color:#ffffff;
 
   .github-latest {
     float: left;
@@ -75,6 +73,10 @@
       display: inline-block;
       vertical-align: top;
       padding: 15px 0px 0px 5px;
+
+      &>a:hover {
+        @extend .text-accent-tertiary;
+      }
 
     }
 
@@ -119,7 +121,7 @@ div.screenshots {
         a {
           @include vertical-gradient(grayLightest, grayLight);
           @include box-sizing(border-box);
-          color: $black;
+          @extend .text-body;
           text-shadow: 0px 1px $grayLightest;
           display: block;
           width: 100%;
@@ -129,7 +131,7 @@ div.screenshots {
 
           &.active {
             @include vertical-gradient($concerto-blue-0, $concerto-blue-3);
-            color: $white;
+            @extend .text-header;
             text-shadow: 0px 1px $concerto-blue-3;
           }
         }
@@ -195,9 +197,6 @@ div.getting-started {
     border: 1px solid $grayLight;
   }
 
-  p {
-    color: $grayLight;
-  }
 }
 
 div.need-help {
@@ -222,7 +221,6 @@ div.need-help {
   }
 
   p {
-    color: $grayLight;
     padding-left: 20%;
     padding-right: 20%;
   }
@@ -238,15 +236,6 @@ img.fp-graphics {
 p.description {
   margin-top: 10px;
 }
-
-.gray {
-  color: #cccccc !important;
-}
-
-.white {
-  color: $white !important;
-}
-
 
 .large {
   font-size: 48px;
