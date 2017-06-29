@@ -1,0 +1,17 @@
+{
+  "sourceMaps": true,
+  // "env": {
+  //   "development": {
+  //     "sourceMaps": "inline"
+  //   },
+  //   "production": {
+  //     "sourceMaps": false
+  //   }
+  // },
+  "presets": [
+    "react"
+  ],
+  "plugins": [
+    "transform-async-to-generator"
+  ]
+}

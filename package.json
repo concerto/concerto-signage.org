@@ -1,0 +1,31 @@
+{
+  "name": "concerto-signage.org",
+  "version": "3.0.0-alpha1",
+  "description": "Concerto Signage Project Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/concerto/concerto-signage.org.git"
+  },
+  "author": "team@concerto-signage.org",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/concerto/concerto-signage.org/issues"
+  },
+  "homepage": "https://github.com/concerto/concerto-signage.org#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "gatsby": "^1.0.0-beta.5",
+    "gatsby-link": "^1.0.0-beta.4",
+    "octokat": "^0.9.0",
+    "react-helmet": "^5.1.3",
+    "react-responsive-grid": "^0.3.4",
+    "react-typography": "^0.15.10"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1"
+  }
+}
