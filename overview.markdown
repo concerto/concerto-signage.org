@@ -3,6 +3,7 @@ layout: page
 title: Overview
 permalink: /overview
 header_text: Concerto is a free, Web-based broadcast medium for digital announcements that _just works_.
+sidebar: overview_sidebar.html
 ---
 
 ## What is Concerto, exactly?
