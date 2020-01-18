@@ -44,6 +44,11 @@
 
             </div>
         </div>
+        {% if page.header_image %}
+        <div id="stripe2-padding" style="background-color: #fff;background-image:url({{ page.header_image }});background-position:bottom center;background-repeat:no-repeat;height:323.0px">
+            &nbsp;
+        </div>
+        {% else %}
         <div id="stripe2-padding" class="pagebg_overview">
             <div class="wrap" id="hp-top">
                 <div id="hp-title">
@@ -53,6 +58,7 @@
                 <div style="clear:both;"></div>
             </div>
         </div>
+        {% endif %}
     </div>
     <div id="stripe3">
         <div class="wrap">
@@ -75,7 +81,7 @@
                                 <br />
                             </section>
                         {% else %}
-                            <section style="width:900px;clear:both;">
+                            <section style="width:980px;clear:both;">
                                 <div class="block">{{ content }}</div>
                                 <div class="block"></div>
                                 <br />
