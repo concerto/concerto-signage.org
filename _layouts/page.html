@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> {{ page.title }} - {{ site.title}} </title>
+
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="publisher" href="https://plus.google.com/113721101312471729180" />
+    <link href="{{ '/assets/css/main.css' | relative_url }}" media="screen"
+        rel="stylesheet" type="text/css" />
+    <script src="/assets/scripts/main.js"
+        type="text/javascript"></script>
+    <!--[if lt IE 9]>
+		<script src="/assets/html5-ce57c18366b0a048ce8f5a07bcde2506.js" type="text/javascript"></script>
+		<![endif]-->
+    <script
+        type="text/javascript">var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-12118708-2']); _gaq.push(['_trackPageview']); (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+</head>
+
+<body class="category_plainheader">
+    <div id="stripe2">
+        <div id="stripe1">
+            <div class="wrap">
+                <div style="float:left;padding-top:18px;">
+                    <a href="/">
+                        <img alt="Home"
+                            src="/assets/images/conclogo_menu.png"
+                            title="Home" />
+                    </a>
+                </div>
+                <div style="float:right;">
+                    <ul id="mainmenu">
+                        <li class="selected"><a href="/overview">Overview</a></li>
+                        <!--<li class="sm"><a href="/demo">Demo</a></li>-->
+                        <li class="sm"><a href="http://groups.google.com/group/concerto-digital-signage"
+                                target="_blank">Forum</a></li>
+                        <li class="sm"><a href="/blog/">Blog</a></li>
+                        <li class="sm"><a href="/deploy">Deploy</a></li>
+                    </ul>
+                </div>
+                <div style="clear:both;"></div>
+
+            </div>
+        </div>
+        <div id="stripe2-padding" class="pagebg_overview">
+            <div class="wrap" id="hp-top">
+                <div id="hp-title">
+                    <h1>{{ page.header_text | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+                    <br /><br /><br />
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="stripe3">
+        <div class="wrap">
+            <div id="maincontent">
+                <div id="mc" style="width:100%;">
+                    <article>
+                        <div style="clear:both;"></div>
+                        <section style="width:600px;">
+                            <div class="block">{{ content }}</div>
+                            <div class="block"></div>
+                            <br />
+                        </section>
+                        <section style="width:380px;">
+                            <div class="block">
+                                <div class="sb">
+                                    <div class="sb-item">
+                                        <div class="sb-top">
+                                            <div class="sb-top-padding">
+                                                <h1>
+                                                    In Use At RPI</h1>
+                                            </div>
+                                        </div>
+                                        <div class="sb-mid">
+                                            <div class="sb-mid-padding">
+                                                <p>
+                                                    The oldest tech university in the English-speaking world relies on
+                                                    Concerto every day to stay informed about on-campus events,
+                                                    deadlines, workshops, academic lectures, and pretty much everything
+                                                    else.&nbsp; Concerto is an information resource like no other that
+                                                    greatly improves campus-wide communication.</p>
+                                                <p>
+                                                    There are many ways to benefit from a Concerto installation.&nbsp;
+                                                    <a href="/why-concerto">Learn more about how Concerto can fit well
+                                                        into your community.</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="sb-bot">
+                                            &nbsp;</div>
+                                    </div>
+                                    <div class="sb-item">
+                                        <div class="sb-top">
+                                            <div class="sb-top-padding">
+                                                <h1>Our Benefactors</h1>
+                                            </div>
+                                        </div>
+                                        <div class="sb-mid">
+                                            <div class="sb-mid-padding">
+                                                <p>
+                                                    The Concerto Project has only been possible thanks in no small part
+                                                    to the <a href="/pages/supporters">funding and generous support</a>
+                                                    of many other organizations at RPI.</p>
+                                            </div>
+                                        </div>
+                                        <div class="sb-bot">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <p>&nbsp;</p>
+                            </div>
+                            <br />
+                        </section>
+                        <div style="clear:both;"></div>
+                    </article>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stripe4">
+        <div class="wrap">
+            <footer>
+                <div style="float:left; width:68%; text-align:left;">
+                    <p>
+                        <a href="/deploy">Deploy</a> |
+                        <a href="http://concerto-signage.org/help">v1 Help</a> |
+                        <a href="https://github.com/concerto/concerto_v1/zipball/concerto-1.9.3-NoCAS"
+                            target="_blank">v1 Download</a> |
+                        <a href="https://github.com/concerto/concerto" target="_blank">v2 Source</a> |
+                        <a href="/blog">Blog</a> |
+                        <a
+                            href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%63%6f%6e%63%65%72%74%6f-%64%69%67%69%74%61%6c-%73%69%67%6e%61%67%65@%67%6f%6f%67%6c%65%67%72%6f%75%70%73.%63%6f%6d">Concerto
+                            Support</a> |
+                        <a href="mailto:{{site.email}}">Dev
+                            Team</a>
+                    </p>
+                    <p>&copy; 2007-2020 The Concerto Project. All rights reserved.</p>
+                    <p class="small">Concerto is free software; you can redistribute it and/or modify it under the terms
+                        of the License included with the software.</p>
+                    <p class="small">Use of the Concerto name and logo mark are governed by the <a
+                            href="/pages/trademark-policy">Concerto Trademark Policy</a>.</p>
+                </div>
+                <div style="clear:both;"></div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
