@@ -60,22 +60,27 @@
                 <div id="mc" style="width:100%;">
                     <article>
                         <div style="clear:both;"></div>
-                        <section style="width:600px;">
-                            <div class="block">{{ content }}</div>
-                            <div class="block"></div>
-                            <br />
-                        </section>
-                        <section style="width:380px;">
-                            <div class="block">
-                                <div class="sb">
-                                    {% if page.sidebar %}
+                        {% if page.sidebar %}
+                            <section style="width:600px;">
+                                <div class="block">{{ content }}</div>
+                                <div class="block"></div>
+                                <br />
+                            </section>
+                            <section style="width:380px;">
+                                <div class="block">
+                                    <div class="sb">
                                         {% include {{ page.sidebar }} %}
-                                    {% endif %}
+                                    <p>&nbsp;</p>
                                 </div>
-                                <p>&nbsp;</p>
-                            </div>
-                            <br />
-                        </section>
+                                <br />
+                            </section>
+                        {% else %}
+                            <section style="width:900px;clear:both;">
+                                <div class="block">{{ content }}</div>
+                                <div class="block"></div>
+                                <br />
+                            </section>
+                        {% endif %}
                         <div style="clear:both;"></div>
                     </article>
                 </div>
