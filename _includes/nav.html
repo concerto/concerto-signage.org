@@ -10,7 +10,7 @@
         <div style="float:right;">
             <ul id="mainmenu">
                 {% for item in site.data.nav.pages %}
-                    <li class="{% if item.url == page.url %}selected{% endif %} {% if item.short %}sm{% endif %}">
+                    <li class="{% if page.url contains item.url %}selected{% endif %} {% if item.short %}sm{% endif %}">
                         <a href="{{ item.url }}">{{ item.title }}</a>
                     </li>
                 {% endfor %}
