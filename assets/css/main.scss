@@ -82,6 +82,16 @@ p img, .wp-caption {
   font-size: 12px;
 }
 
+.post-title, .post-title a {
+    font-weight: normal;
+    color: #222;
+    text-decoration: none;
+}
+
+.post-title a:hover, .post-title a:focus, .post-title a:active {
+  color: #1982d1;
+}
+
 /** END WORDPRESS STYLES **/
 
 .caps {

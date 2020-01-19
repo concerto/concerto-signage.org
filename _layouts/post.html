@@ -29,30 +29,13 @@ layout: base
                 </div>
                 <article>
                     <div style="clear:both;"></div>
-                    {% if page.sidebar %}
-                        <section style="width:600px;">
-                            <div class="block">{{ content }}</div>
-                            <div class="block"></div>
-                            <br />
-                        </section>
-                        <section style="width:380px;">
-                            <div class="block">
-                                <div class="sb">
-                                    {% include {{ page.sidebar }} %}
-                                    <p>&nbsp;</p>
-                                </div>
-                            </div>
-                            <br />
-                        </section>
-                    {% else %}
                         <section style="width:980px;clear:both;">
-                            <h1>{{ page.title }}</h1>
+                            <h1 class="post-title">{{ page.title }}</h1>
                             <h2 class="post-meta">{{ page.date | date: "%m/%d/%Y" }} by {{ page.author }}</h2>
                             <div class="block">{{ content }}</div>
                             <div class="block"></div>
                             <br />
                         </section>
-                    {% endif %}
                     <div style="clear:both;"></div>
                 </article>
                 <div class="post-footer">
