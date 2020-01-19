@@ -1,0 +1,58 @@
+---
+layout: base
+---
+
+<div id="stripe2">
+
+    {% include nav.html %}
+    
+    {% if page.header_image %}
+    <div id="stripe2-padding" style="background-color: #fff;background-image:url({{ page.header_image }});background-position:bottom center;background-repeat:no-repeat;height:323.0px">
+        &nbsp;
+    </div>
+    {% else %}
+    <div id="stripe2-padding" class="pagebg_overview">
+        <div class="wrap" id="hp-top">
+            <div id="hp-title">
+                <h1>{{ page.header_text | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+                <br /><br /><br />
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+<div id="stripe3">
+    <div class="wrap">
+        <div id="maincontent">
+            <div id="mc" style="width:100%;">
+                <article>
+                    <div style="clear:both;"></div>
+                    {% if page.sidebar %}
+                        <section style="width:600px;">
+                            <div class="block">{{ content }}</div>
+                            <div class="block"></div>
+                            <br />
+                        </section>
+                        <section style="width:380px;">
+                            <div class="block">
+                                <div class="sb">
+                                    {% include {{ page.sidebar }} %}
+                                <p>&nbsp;</p>
+                            </div>
+                            <br />
+                        </section>
+                    {% else %}
+                        <section style="width:980px;clear:both;">
+                            <div class="block">{{ content }}</div>
+                            <div class="block"></div>
+                            <br />
+                        </section>
+                    {% endif %}
+                    <div style="clear:both;"></div>
+                </article>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+</div>

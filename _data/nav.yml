@@ -1,0 +1,12 @@
+pages:
+  - title: Overview
+    url: /overview
+  - title: Forum
+    url: http://groups.google.com/group/concerto-digital-signage
+    short: true
+  - title: Blog
+    url: /blog
+    short: true
+  - title: Deploy
+    url: /deploy
+    short: true

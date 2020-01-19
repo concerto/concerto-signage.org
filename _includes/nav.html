@@ -1,0 +1,22 @@
+<div id="stripe1">
+    <div class="wrap">
+        <div style="float:left;padding-top:18px;">
+            <a href="/">
+                <img alt="Home"
+                    src="/assets/images/conclogo_menu.png"
+                    title="Home" />
+            </a>
+        </div>
+        <div style="float:right;">
+            <ul id="mainmenu">
+                {% for item in site.data.nav.pages %}
+                    <li class="{% if page.url contains item.url %}selected{% endif %} {% if item.short %}sm{% endif %}">
+                        <a href="{{ item.url }}">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div style="clear:both;"></div>
+
+    </div>
+</div>
