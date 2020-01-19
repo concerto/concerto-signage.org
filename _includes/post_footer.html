@@ -1,12 +1,11 @@
 <div class="post-footer">
-    This entry was posted in
-    <a href="/blog/category/{{page.categories[0]|slugify}}/" title="View all posts in {{page.categories[0]}}">{{page.categories[0]}}</a>
+    This entry was posted in {{page.categories[0]}}
     {% if page.tags.size > 0 %}
     and tagged
     {% for tag in page.tags %}
-    <a href="{{site.baseurl}}/tag/{{tag|slugify}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}
+    {{tag}}{% unless forloop.last %}, {% endunless %}
     {% endfor %}
     {% endif %}
-    by {{page.author }}</a>.
+    by {{page.author }}.
     Bookmark the <a href="{{page.url}}" title="Permalink to {{page.title}}" rel="bookmark">permalink</a>.
 </div>
