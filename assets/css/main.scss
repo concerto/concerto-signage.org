@@ -1,6 +1,89 @@
 ---
 ---
 
+/** START WORDPRESS STYLES **/ 
+
+.post-meta {
+  padding: 2px 4px;
+  font-size: 12px;
+  border: 0px;
+  color: #666;
+  line-height: 18px;
+}
+
+.post-nav {
+  float: right;
+  position: relative;
+  top: -.3em;
+  text-align: right;
+  width: 100%;
+  z-index: 1;
+}
+
+.post-footer {
+  border-top: dotted 1px #999;
+  color: #666;
+  clear: both;
+  font-size: 10px;
+  line-height: 18px;
+  padding: 6px 4px;
+}
+
+.wp-caption {
+  background: #eee;
+  margin-bottom: 1.625em;
+  max-width: 96%;
+  padding: 9px;
+}
+
+p img, .wp-caption {
+  margin-top: .4em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.625em;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.625em;
+}
+
+.wp-caption .wp-caption-text:before {
+  color: #666;
+  content: '\2014';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  margin-right: 5px;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+
+.wp-caption .wp-caption-text {
+  margin-bottom: .6em;
+  padding: 10px 0 5px 40px;
+  position: relative;
+}
+.wp-caption .wp-caption-text, .gallery-caption {
+  color: #666;
+  font-family: Georgia,serif;
+  font-size: 12px;
+}
+
+/** END WORDPRESS STYLES **/
+
 .caps {
     text-transform: uppercase;
   }
