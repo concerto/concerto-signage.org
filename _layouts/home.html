@@ -9,7 +9,7 @@ layout: base
 </div>
 
 <div id="stripe2" class="fp_waves bighero">
-    
+
     {% include nav.html %}
 
     <div id="stripe2-padding">
@@ -38,33 +38,12 @@ layout: base
                     </div>
                     <div class="sb-mid">
                         <div class="sb-mid-padding">
-                            <p><a href="http://www.concerto-signage.org/blog/2017/03/05/concerto-2-3-4-released/">Concerto
-                                    2.3.4 Released</a><br />Some weeks back, we released Concerto 2.3.4. This
-                                release contains fixes for many bugs and updates to the calendar and weather
-                                plugins. For the full lis...</p>
-                            <p><a href="http://www.concerto-signage.org/blog/2016/04/07/concerto-2-3-3-released/">Concerto
-                                    2.3.3 Released</a><br />Today, we’re releasing Concerto 2.3.3. The main change
-                                in this release is a fix for the image rotation issues we’ve had reported to us that
-                                were causing...</p>
-                            <p><a href="http://www.concerto-signage.org/blog/2015/10/31/concerto-2-3-1/">Concerto
-                                    2.3.1</a><br />Some weeks back, we released Concerto 2.3.0, the first release
-                                the feature the new frontend plugin (written using the Polymer framework). This
-                                removes t...</p>
-                            <p><a
-                                    href="http://www.concerto-signage.org/blog/2015/01/24/concerto-2-2-5-released-2-3-will-feature-new-frontend/">Concerto
-                                    2.2.5 released – 2.3 will feature new frontend</a><br />Today&#8217;s release of
-                                Concerto 2.2.5 will likely be the last in the 2.2 series. It comprises a large
-                                contribution to the state of internationalizatio...</p>
-                            <p><a
-                                    href="http://www.concerto-signage.org/blog/2014/12/03/concerto-2-2-2-is-released-and-we-have-a-new-frontend-on-the-way/">Concerto
-                                    2.2.2 is released and we have a new frontend on the way</a><br />With the
-                                release of Concerto 2.2.2, the 2.x series is at a pretty stable place, seeing very
-                                few code changes outside of the views, but many stability fi...</p>
-                            <p><a
-                                    href="http://www.concerto-signage.org/blog/2014/05/10/concerto-2-final-beta-releases/">Concerto
-                                    2 Final Beta Releases</a><br />As we&#8217;ve moved through the .8 series of
-                                releases, we&#8217;ve brought Concerto 2 closer and closer to a feature-complete
-                                release. With the 0.9 ser...</p>
+                            {% for post in site.posts | limit:5 %}
+                            <p>
+                                <a href="{{ post.url }}">{{ post.title }}</a><br />
+                                {{ post.excerpt | strip_html | strip_newlines | truncate: 155 }}
+                            </p>
+                            {% endfor %}
                         </div>
                     </div>
                     <div class="sb-bot">&nbsp;</div>
