@@ -22,6 +22,7 @@ title: Concerto Digital Signage Project
 email: team@concerto-signage.org
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.concerto-signage.org" # the base hostname & protocol for your site, e.g. http://example.com
+description: ""
 twitter_username: ""
 github_username:  concerto
 facebook:
