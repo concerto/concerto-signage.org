@@ -7,7 +7,7 @@ It was migrated from a custom-built CMS Rails app built ~2010.
 
 ## Developing
 
-To preview pages locally, run `bundle exec jekyll serve` which will spawn a local webserver you can visit.
+To preview pages locally, run `bundle exec jekyll serve` which will spin up a local webserver you can visit.
 
 ## Deploying
 
