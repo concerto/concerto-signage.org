@@ -12,13 +12,13 @@ Concerto comes with a template importer, located in the Admin Panel tab to help 
 
 If you're looking to import a template into your Concerto installation we have a few available under a [Creative Commons Attribution-Noncommercial 3.0 United States License](http://creativecommons.org/licenses/by-nc/3.0/us/):
 
-*   [Blue Swoosh Neo](http://downloads.concerto-signage.org/templates/BlueSwooshNeo_16x9.zip) [[preview]](http://downloads.concerto-signage.org/templates/previews/BlueSwooshNeo_16x9_preview.jpg)
-*   [Gray Swoosh](http://downloads.concerto-signage.org/templates/GraySwoosh_16x9.zip) [[preview]](http://downloads.concerto-signage.org/templates/previews/GraySwoosh_16x9_preview.jpg)
-*   [Ribbon](http://downloads.concerto-signage.org/templates/Ribbon_16x9.zip) [[preview]](http://downloads.concerto-signage.org/templates/previews/Ribbon_16x9_preview.jpg)
-*   [Ruby](http://downloads.concerto-signage.org/templates/Ruby_16x9.zip) [[preview]](http://downloads.concerto-signage.org/templates/previews/Ruby_16x9_preview.jpg)
-*   [Simplicity](http://downloads.concerto-signage.org/templates/Simplicity.zip) [[preview]](http://downloads.concerto-signage.org/templates/previews/Simplicity_preview.jpg)
-*   [Stoic](http://downloads.concerto-signage.org/templates/Stoic_16x9.zip) [[preview]](http://downloads.concerto-signage.org/templates/previews/Stoic_16x9_preview.jpg)
-*   [Waves](http://downloads.concerto-signage.org/templates/Waves_16x9.zip) [[preview]](http://downloads.concerto-signage.org/templates/previews/Waves_16x9_preview.jpg)
+*   [Blue Swoosh Neo](https://downloads.concerto-signage.org/templates/BlueSwooshNeo_16x9.zip) [[preview]](https://downloads.concerto-signage.org/templates/previews/BlueSwooshNeo_16x9_preview.jpg)
+*   [Gray Swoosh](https://downloads.concerto-signage.org/templates/GraySwoosh_16x9.zip) [[preview]](https://downloads.concerto-signage.org/templates/previews/GraySwoosh_16x9_preview.jpg)
+*   [Ribbon](https://downloads.concerto-signage.org/templates/Ribbon_16x9.zip) [[preview]](https://downloads.concerto-signage.org/templates/previews/Ribbon_16x9_preview.jpg)
+*   [Ruby](https://downloads.concerto-signage.org/templates/Ruby_16x9.zip) [[preview]](https://downloads.concerto-signage.org/templates/previews/Ruby_16x9_preview.jpg)
+*   [Simplicity](https://downloads.concerto-signage.org/templates/Simplicity.zip) [[preview]](https://downloads.concerto-signage.org/templates/previews/Simplicity_preview.jpg)
+*   [Stoic](https://downloads.concerto-signage.org/templates/Stoic_16x9.zip) [[preview]](https://downloads.concerto-signage.org/templates/previews/Stoic_16x9_preview.jpg)
+*   [Waves](https://downloads.concerto-signage.org/templates/Waves_16x9.zip) [[preview]](https://downloads.concerto-signage.org/templates/previews/Waves_16x9_preview.jpg)
 
 [![Creative Commons License](http://i.creativecommons.org/l/by-nc/3.0/us/88x31.png)](http://creativecommons.org/licenses/by-nc/3.0/us/)
 
