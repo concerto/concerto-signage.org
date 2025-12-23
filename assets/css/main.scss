@@ -794,3 +794,16 @@ p img, .wp-caption {
   .no-js {
     width: 60%;
   }
+
+/* Blockquote styling for email/quotes */
+blockquote {
+  background: #f5f5f5;
+  margin: 1.5em 2em;
+  padding: 1em;
+  border-left: 5px solid #ddd;
+  color: #555;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
