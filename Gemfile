@@ -10,6 +10,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
   gem "jekyll-paginate"
   gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
 end
 
 # Required for Jekyll serve on Ruby 3.0+
