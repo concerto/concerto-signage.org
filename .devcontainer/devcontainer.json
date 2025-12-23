@@ -1,0 +1,19 @@
+{
+  "name": "Jekyll Site",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "forwardPorts": [4000],
+  "postCreateCommand": "bundle install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "shengchen.vscode-check-md",
+        "davidanson.vscode-markdownlint"
+      ]
+    }
+  }
+}
