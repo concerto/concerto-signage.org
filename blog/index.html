@@ -10,16 +10,13 @@ title: Concerto Blog
 {% for page in paginator.posts %}
 
 <article style="padding-bottom:3em;">
-  <div style="clear:both;"></div>
-      <section style="width:980px;clear:both;">
-          <h1 class="post-title"><a href="{{page.url}}">{{ page.title }}</a></h1>
-          <h2 class="post-meta">{{ page.date | date: "%m/%d/%Y" }} by {{ page.author }}</h2>
-          <div class="block">{{ page.content }}</div>
-          <div class="block"></div>
-          <br />
-      </section>
-      <div style="clear:both;"></div>
-      {% include post_footer.html %}
+    <section>
+        <h1 class="post-title"><a href="{{page.url}}">{{ page.title }}</a></h1>
+        <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }} by {{ page.author }}</p>
+        <div class="block">{{ page.content }}</div>
+    </section>
+    <div class="clear"></div>
+    {% include post_footer.html %}
 </article>
 {% endfor %}
 

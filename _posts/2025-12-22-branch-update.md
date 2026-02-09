@@ -2,7 +2,7 @@
 id: 221
 title: Branch Update
 date: 2025-12-22T23:45:00+00:00
-author: Brian Michalski
+author: bamnet
 layout: post
 guid: http://www.concerto-signage.org/blog/?p=221
 permalink: /blog/2025/12/22/branch-update

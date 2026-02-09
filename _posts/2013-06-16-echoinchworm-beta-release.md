@@ -2,7 +2,7 @@
 id: 176
 title: EchoInchworm Beta Release
 date: 2013-06-16T02:02:34+00:00
-author: Brian Michalski
+author: bamnet
 layout: post
 guid: http://www.concerto-signage.org/blog/?p=176
 permalink: /blog/2013/06/16/echoinchworm-beta-release/

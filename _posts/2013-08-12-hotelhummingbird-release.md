@@ -2,7 +2,7 @@
 id: 194
 title: HotelHummingbird Release
 date: 2013-08-12T21:17:21+00:00
-author: Brian Michalski
+author: bamnet
 layout: post
 guid: http://www.concerto-signage.org/blog/?p=194
 permalink: /blog/2013/08/12/hotelhummingbird-release/

@@ -2,7 +2,7 @@
 id: 108
 title: V2 Early Preview
 date: 2012-11-30T20:29:19+00:00
-author: Brian Michalski
+author: bamnet
 layout: post
 guid: http://www.concerto-signage.org/blog/?p=108
 permalink: /blog/2012/11/30/v2-early-preview/

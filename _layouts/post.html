@@ -5,43 +5,38 @@ layout: base
 <div id="stripe2">
 
     {% include nav.html %}
-    
+
     <div id="stripe2-padding" class="pagebg_overview">
         <div class="wrap">
             <div id="hp-title">
                 <img src="/assets/images/blog_banner_1b.jpg" />
             </div>
-            <div style="clear:both;"></div>
+            <div class="clear"></div>
         </div>
     </div>
 </div>
 <div id="stripe3">
     <div class="wrap">
         <div id="maincontent">
-            <div id="mc" style="width:100%;">
-                <div class="post-nav">
-                    {% if page.previous %}
-                    <a href="{{page.previous.url}}" rel="prev">← Previous</a>
-                    {% endif %}
-                    {% if page.next %}
-                    <a href="{{page.next.url}}" rel="next">Next →</a>
-                    {% endif %}
-                </div>
+            <div id="mc" class="mc-full">
                 <article>
-                    <div style="clear:both;"></div>
-                        <section style="width:980px;clear:both;">
-                            <h1 class="post-title">{{ page.title }}</h1>
-                            <h2 class="post-meta">{{ page.date | date: "%m/%d/%Y" }} by {{ page.author }}</h2>
-                            <div class="block">{{ content }}</div>
-                            <div class="block"></div>
-                            <br />
-                        </section>
-                    <div style="clear:both;"></div>
+                    <section>
+                        <h1 class="post-title">{{ page.title }}</h1>
+                        <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }} by {{ page.author }}</p>
+                        <div class="block">{{ content }}</div>
+                    </section>
                 </article>
                 {% include post_footer.html %}
+                <div class="post-nav">
+                    {% if page.previous %}
+                    <a href="{{page.previous.url}}" rel="prev">&larr; Previous</a>
+                    {% endif %}
+                    {% if page.next %}
+                    <a href="{{page.next.url}}" rel="next">Next &rarr;</a>
+                    {% endif %}
+                </div>
             </div>
-            <div style="clear:both;"></div>
+            <div class="clear"></div>
         </div>
     </div>
 </div>
-            

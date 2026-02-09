@@ -2,7 +2,7 @@
 id: 138
 title: Introducing Dynamic Content in Concerto 2 (and more!)
 date: 2013-03-08T00:55:06+00:00
-author: Brian Michalski
+author: bamnet
 layout: post
 guid: http://www.concerto-signage.org/blog/?p=138
 permalink: /blog/2013/03/08/introducing-dynamic-content-in-concerto-2-and-more/

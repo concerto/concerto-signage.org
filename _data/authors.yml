@@ -1,0 +1,23 @@
+# twitter: 0 suppresses jekyll-seo-tag's twitter:creator meta tag.
+# The plugin falls back to the author name if twitter is nil/absent,
+# so a non-string truthy value (integer 0) is needed to prevent that.
+
+bamnet:
+  name: Brian Michalski
+  twitter: bamnet
+
+brzaik:
+  name: brzaik
+  twitter: 0
+
+august:
+  name: august
+  twitter: 0
+
+khanh:
+  name: khanh
+  twitter: 0
+
+charlie:
+  name: Charles Emala
+  twitter: 0

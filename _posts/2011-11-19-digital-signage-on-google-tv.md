@@ -2,7 +2,7 @@
 id: 47
 title: Digital Signage on Google TV
 date: 2011-11-19T00:51:55+00:00
-author: Brian Michalski
+author: bamnet
 layout: post
 guid: http://www.concerto-signage.org/blog/?p=47
 permalink: /blog/2011/11/19/digital-signage-on-google-tv/

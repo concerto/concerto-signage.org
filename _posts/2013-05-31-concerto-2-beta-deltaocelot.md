@@ -2,7 +2,7 @@
 id: 166
 title: 'Concerto 2 Beta &#8211; DeltaOcelot!'
 date: 2013-05-31T02:09:35+00:00
-author: Charles Emala
+author: charlie
 layout: post
 guid: http://www.concerto-signage.org/blog/?p=166
 permalink: /blog/2013/05/31/concerto-2-beta-deltaocelot/

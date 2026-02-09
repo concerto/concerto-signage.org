@@ -3,19 +3,17 @@
 
 .post-meta {
   padding: 2px 4px;
-  font-size: 12px;
+  font-size: 14px;
   border: 0px;
   color: #666;
   line-height: 18px;
 }
 
 .post-nav {
-  float: right;
-  position: relative;
-  top: -.3em;
+  clear: both;
+  padding-top: 1em;
   text-align: right;
   width: 100%;
-  z-index: 1;
 }
 
 .post-footer {
@@ -575,16 +573,31 @@ p img, .wp-caption {
   #mc {
     float: left;
     width: 600px;
-  
-    p {
-      line-height: 20px;
+
+    &.mc-full {
+      float: none;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
     }
   
+    p {
+      line-height: 1.6;
+    }
+
     ul, ol {
       margin-left: 35px;
     }
-  
-    li {
+
+    ul li {
+      list-style: disc;
+      margin: 0px;
+      margin-bottom: 6px;
+      padding: 0px;
+    }
+
+    ol li {
+      list-style: decimal;
       margin: 0px;
       margin-bottom: 6px;
       padding: 0px;

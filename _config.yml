@@ -23,7 +23,7 @@ email: team@concerto-signage.org
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.concerto-signage.org" # the base hostname & protocol for your site, e.g. http://example.com
 description: "Concerto is a web-based digital signage system released under the Apache v2 open source license."
-twitter_username: ""
+author: bamnet
 github_username:  concerto
 logo: /assets/images/conclogo_menu.png
 facebook:
@@ -47,6 +47,16 @@ sass:
 
 feed:
   path: /blog/atom.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      image: /assets/images/blog_banner_1b.jpg
+
+twitter:
+  card: summary_large_image
 
 exclude:
   - Gemfile

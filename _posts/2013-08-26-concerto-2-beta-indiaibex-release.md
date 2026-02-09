@@ -2,7 +2,7 @@
 id: 197
 title: 'Concerto 2 Beta &#8211; IndiaIbex Release'
 date: 2013-08-26T22:43:18+00:00
-author: Brian Michalski
+author: bamnet
 layout: post
 guid: http://www.concerto-signage.org/blog/?p=197
 permalink: /blog/2013/08/26/concerto-2-beta-indiaibex-release/

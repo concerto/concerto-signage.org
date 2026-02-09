@@ -2,7 +2,7 @@
 id: 157
 title: Concerto 2 Beta
 date: 2013-03-24T21:24:57+00:00
-author: Brian Michalski
+author: bamnet
 layout: post
 guid: http://www.concerto-signage.org/blog/?p=157
 permalink: /blog/2013/03/24/concerto-2-beta/
