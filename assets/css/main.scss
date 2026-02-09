@@ -579,8 +579,12 @@ p img, .wp-caption {
       width: 100%;
       max-width: 700px;
       margin: 0 auto;
+
+      p, li {
+        font-size: 16px;
+      }
     }
-  
+
     p {
       line-height: 1.6;
     }
