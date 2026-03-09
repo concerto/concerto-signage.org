@@ -1,6 +1,9 @@
 pages:
   - title: Overview
     url: /overview
+  - title: Docs
+    url: /docs
+    short: true
   - title: Forum
     url: http://groups.google.com/group/concerto-digital-signage
     short: true
