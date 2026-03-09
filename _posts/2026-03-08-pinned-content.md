@@ -1,6 +1,6 @@
 ---
 title: Pinned Content, for the static side of life
-date: 2026-03-08T22:21:00-05:00
+date: 2026-03-08T12:00:00-05:00
 author: bamnet
 layout: post
 permalink: /blog/2026/03/08/pinned-content
